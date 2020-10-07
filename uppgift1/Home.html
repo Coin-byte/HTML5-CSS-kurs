@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Uppgift 1</title>
+        <meta name="description" content="Frågeformulär proof of concept">
+        <meta name="author" content="Kristoffer Wernberg">
+
+        <!--La det mesta i klasser med flit, även om det inte behövs för uppgiften.-->
+    </head>
+    <body>
+        <div class="input">
+        <h1>Undersökning, vänligen fyll i formulär</h1>
+        <label for="fname"><b>Mata in namn</b></label><br>
+            <input type="text" id="name" name="name" size="35" maxlength="20" value="namn"><br><br>
+
+            <textarea name="message" rows="4" cols="30">Skriv en kort beskrivning om dig själv</textarea>
+        </div>
+
+        <div class="radio">
+            <p><em>Tränar du i någon sport?</em></p>
+            <input type="radio" id="ja" name="val" value="ja">
+            <label for="ja">Ja</label><br>
+            <input type="radio" id="nej" name="val" value="nej">
+            <label for="nej">Nej</label><br>
+        </div>
+
+        <br>
+
+        <div class="checkbox">
+            <p><em>På <b>vilket/vilka</b> sätt föredrar du att läsa om saker du tycker är intressant?</em></p>
+            <input type="checkbox" id="val1" name="val1" value="Books">
+            <label for="val1"> Böcker</label><br>
+            <input type="checkbox" id="val2" name="val2" value="Magazines">
+            <label for="val2"> Tidningar</label><br>
+            <input type="checkbox" id="val3" name="val3" value="Online">
+            <label for="val3"> Online</label>
+        </div>
+
+        <br>
+
+        <div class="submit">
+            <label for="meny">Välj favoritgenre för film:</label><br>
+            <select name="meny" id="meny">
+                <option value="blank"></option>
+                <option value="action">Action</option>
+                <option value="romance">Romantik</option>
+                <option value="komedy">Komedi</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Skräck</option>
+            </select>
+        </div>
+
+        <br>
+        <form action="server.html">
+            <input type="submit" value="Skicka in formulär">
+        </form>
+        </body>
+</html>
