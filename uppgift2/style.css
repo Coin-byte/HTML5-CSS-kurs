@@ -1,0 +1,155 @@
+body {
+    background-image: url("test1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(39, 39, 39);
+   }
+
+abbr:hover{
+    color: #c5c5c5;
+}
+h1{
+    font-family: fantasy;
+    margin: 0px;
+    text-align: center;
+    font-size: 125%;
+}
+h2{
+    font-family: fantasy;
+    font-size: 65%;
+    margin: 0;
+}
+
+.page-wrapper{
+    padding-top: 0;
+    padding-left: 180px;
+    padding-right: 50px;
+    display: flex;
+}
+
+
+#zen-supporting{
+    background-color: #29a19dda;
+    border: 2px solid black;
+    border-radius: 5px 5px 5px 5px;
+    margin: 8px 60px 420px 10px;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    min-width: 200px;
+}
+#zen-supporting h3{
+    font-family: cursive;
+    font-size: 150%;
+}
+
+.intro{
+    background-color: #29a19dc7;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+    height: max-content;
+    border-radius: 25px 5px 5px 25px;
+    min-width: 200px;
+    max-width: 800px;
+}
+
+#zen-summary {
+    background-color: #29a19dbb;
+    border-radius: 10px 10px 0px 0px;
+    width: 150px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+}
+
+/*
+Har inte */
+.sidebar{
+    background-color: #29a19dc9;
+    width: 500px;
+    border: 2px solid black;
+    height: fit-content;
+    text-align: center;
+    padding-right: 35px;
+    margin-top: 10px;
+}
+
+.sidebar li{
+    list-style: none;
+    text-align: center;
+    display: inline;
+}
+.sidebar a{
+    display: block;
+    color: rgb(33, 36, 33);
+    text-decoration: none;
+    width: 155px;
+}
+.sidebar a:hover{
+    display: block;
+    background-color: rgba(144, 238, 144, 0.767);
+    text-decoration: none;
+    border-radius: 5px 5px 5px 5px;
+}
+.sidebar h3{
+    font-family: fantasy;
+    font-size: 95%;
+    text-decoration: underline;
+    color: rgb(33, 36, 33);
+}
+.designer-name{
+    margin-bottom: 25px;
+}
+footer{
+    width: 100%;
+    display: block;
+	float: left;
+	clear: both;
+    text-align:center;
+}
+footer a{
+    background-color: transparent;
+    border: 1px solid green;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+footer a:hover{
+    background-color: #72b689;
+}
+
+@media (max-width: 768px) {
+    aside{
+        display: none;
+    }
+}
+@media (max-width: 1200px){
+    #zen-summary{
+        display: none;
+    }
+    .page-wrapper{
+        flex-direction: column;
+    }
+    /*
+    Hade problem med att få sidebar
+    att bete sig som jag ville vid minskande av sidan,
+    så valde att ta bort både sidebar och aside, som 
+    uppmanade till att använda sidebar
+    */
+    .sidebar{
+        display: none;
+    }
+    #zen-supporting{
+        margin: 8px 8px 8px 8px;
+    }
+    .intro{
+        border-radius: 25px 25px 5px 5px;
+    }
+}
